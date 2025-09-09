@@ -1,0 +1,179 @@
+/* --- Basic Setup & Precise Typography --- */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #f7f8fa; /* Lighter background */
+    color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1, h3 {
+    font-weight: 700;
+    color: #0d233b; /* More accurate dark blue */
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e9ebee;
+    margin: 35px 0;
+}
+
+/* --- Main Layout Container --- */
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 950px; /* Adjusted width */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+}
+
+/* --- Geometric Side Banner (Advanced) --- */
+.side-banner {
+    flex-basis: 90px;
+    position: relative; /* Required for pseudo-elements */
+    background: #4dd0e1; /* Main teal */
+}
+/* This creates the darker, lower ribbon shape */
+.side-banner::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #45b7c6; /* Darker teal */
+    clip-path: polygon(100% 85%, 35% 100%, 100% 100%);
+}
+
+/* --- Main Content Area --- */
+.content {
+    flex-grow: 1;
+    padding: 35px;
+}
+
+/* --- Logo Placeholder --- */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.logo-icon {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(45deg, #4DD0E1, #45B7C6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 750;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+}
+.logo-text span:first-child {
+    font-weight: 600;
+    font-size: 16px;
+    color: #263238;
+}
+.logo-text span:last-child {
+    font-size: 12px;
+    color: #546e7a;
+}
+
+/* --- Form, Input & Table Styling --- */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dce4ec;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+/* Adds the blue border on focus, just like the image */
+input:focus {
+    outline: none;
+    border-color: #4A90E2;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+button {
+    width: auto;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 5px;
+    background-color: #263238;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #37474f;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px 5px;
+    text-align: left;
+    border-bottom: 1px solid #eef1f6;
+    word-break: break-all;
+    font-size: 13px;
+}
+
+thead th {
+    font-size: 12px;
+    font-weight: 700;
+    color: #546e7a;
+    text-transform: uppercase;
+}
+
+.delete-btn {
+    background-color: #ef5350;
+    font-size: 12px;
+    padding: 6px 10px;
+}
+.delete-btn:hover {
+    background-color: #e53935;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form | Newton School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="aesthetics.css">
+</head>
+<body>
+
+    <div class="container">
+        <aside class="side-banner"></aside>
+        
+        <main class="content">
+            <div class="logo">
+                <div class="logo-icon">N</div>
+                <div class="logo-text">
+                    <span>Newton School</span>
+                    <span>Coding Club</span>
+                </div>
+            </div>
+
+            <h1>Recruitment Task</h1>
+            
+            <form id="signup-form">
+                <h3>Signup Form</h3>
+                <div>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Signup</button>
+            </form>
+
+            <hr>
+
+            <h3>User Dashboard</h3>
+            <table id="dashboard-table">
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Password (Hashed)</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="user-data">
+                    </tbody>
+            </table>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
