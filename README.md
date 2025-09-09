@@ -63,8 +63,8 @@ A code editor (e.g., VS Code) to view the source code.
 Project Structure
 
 /SIGNUP_PROJECT
-├── index.html         // The main HTML file for structure.
-├── aesthetics.css     // The CSS file for all styling.
-├── script.js          // The JavaScript file for all functionality.
-└── README.md          // This documentation file.
+index.html         // The main HTML file for structure.
+aesthetics.css     // The CSS file for all styling.
+script.js          // The JavaScript file for all functionality.
+README.md          // This documentation file.
 
